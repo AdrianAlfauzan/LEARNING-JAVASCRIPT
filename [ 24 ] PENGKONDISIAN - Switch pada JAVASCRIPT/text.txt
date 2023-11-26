@@ -1,0 +1,136 @@
+Keyword Terakhir "SWITCH"
+
+switch tidak memiliki kondisi yang banyak seperti "if else"
+
+switch (ekspresi){
+    case "nilai 1":
+    aksi 1
+    [break;]
+
+    case "nilai 2":
+    aksi 2
+    [break;]
+
+    case "nilai n":
+    aksi n
+    [break;]
+
+    default:
+    aksi default
+    [break;]
+}
+
+- ekspresi --> menghasilkan sebuah nilai
+- case --> kasus" hasil dari ekspresinya
+- BREAK --> untuk memberhentikan aksi
+- tanpa BREAK --> dia akan melanjutkan ke aksi case berikutnya dan aksi berikutnya! 
+(jadi seperti looping)
+cara tanpa break ada di bawah,sialhkan scrool!!!...
+
+
+bacanya :
+    jika casenya atau nilai dari ekspresinya "nilai 1".
+    maka jalankan aksi 1. 
+    setelah setiap aksinya, kita boleh menambahkan keyword BREAK. (opsional)
+
+jika semua nilainya tidak terpenuhi, maka akan masuk ke aksi default.
+
+ini sama seperti if, else if, dan else.
+
+contoh :
+prompt --> tipe datanya adalah string!.
+maka dari itu, di bagian case perlu di ubah menjadi string nilainya.
+[+] Cara 1
+var angka = prompt("masukkan angka : ");
+switch (angka) {
+    case '1':
+        alert("Anda memasukkan angka 1");
+        break;
+    case '2':
+        alert("Anda memasukkan angka 2");
+        break
+    case '3':
+        alert("Anda memasukkan angka 3");
+        break
+    default:
+        alert("Anda memasukkan angka yang salah!");
+        break
+}
+
+ATAU 
+[+] Cara 2
+var angka = parseInt(prompt("masukkan angka : "));
+switch (angka) {
+    case 1:
+        alert("Anda memasukkan angka 1");
+        break;
+    case 2:
+        alert("Anda memasukkan angka 2");
+        break
+    case 3:
+        alert("Anda memasukkan angka 3");
+        break
+    default:
+        alert("Anda memasukkan angka yang salah!");
+        break
+}
+
+ATAU
+[+] Cara 3
+var item = prompt("masukkan nama makanan/minuman : \n (contoh : nasi,daging,susu, humberger,softdrink)");
+switch (item) {
+    case "nasi":
+        alert("Ini minuman sehat");
+        break
+    case "daging":
+        alert("Ini makanan sehat");
+        break
+    case "susu":
+        alert("Ini minuman sehat");
+        break
+    case "humberger":
+        alert("Ini makanan tidak sehat");
+        break
+    case "softdrink":
+        alert("Ini minuman tidak sehat");
+        break
+    default:
+        alert("Tidak ada di dalam menu!")
+}
+[+] Cara 4 TANPA BREAK
+var item = prompt("masukkan nama makanan/minuman : \n (contoh : nasi,daging,susu, humberger,softdrink)");
+
+switch (item) {
+    case "nasi":
+    case "daging":
+    case "susu":
+        alert("Ini makanan/minuman sehat");
+        break
+    case "humberger":
+    case "softdrink":
+        alert("Ini makanan/minuman tidak sehat");
+        break
+    default:
+        alert("Tidak ada di dalam menu!")
+}
+
+bacanya : 
+case nasi,daging,susu sudah dalam 1 komponen,
+maka tampilkan alert yang sama.
+lalu, case humberger dan softdrink berbeda,karena tidak sehat,
+maka tampilkan alert yang sama
+
+--------------------------------------------------
+di switch tidak dapat melakukan seperti ini :
+var angka = prompt("masukkan angka : ");
+
+switch (angka) {
+    case (angka < 10):
+        alert("Anda memasukkan angka 1");
+        break;
+    default:
+        alert("Anda memasukkan angka yang salah!");
+        break
+}
+'
+semuanya harus dimulai NILAINYA LANGSUNG!

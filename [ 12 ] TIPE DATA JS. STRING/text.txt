@@ -1,0 +1,37 @@
+String adalah tipe data STRING yang digunakan 
+untuk mempresentasikan data tekstual(Plain Text).
+" " atau '' --> sama saja
+
+contoh penggunakan kutip di dalam kutip agar tidak error :
+1. "hari jum'at"
+2. ' ini adalah "quotes" '
+
+contoh penggunakan kutip ada 2 kutip ("" dan '') di dalam kutip 
+agar tidak error menggunakan ESCAPE CHARACTER:
+[+] menambahkan backslash (\)
+
+contoh 1 : 
+'"ini quotes" pada hari jum\'at'
+contoh 2 : 
+'\"ini quotes\" pada hari jum'at'
+
+ESCAPE CHARACTER        |       HASIL
+        \0                      karakter NULL
+        \'                         '
+        \"                          "
+        \\                          \
+        \n                      new line / baris baru
+        \t                          tab
+        \b                          backspace
+        \uXXXX                      unicode
+
+UNICODE         |         HASIL 
+\u00A9                     '©'              
+\u00AE                     '®'
+\U00B1                      +-
+\u00B5                      4
+\u2122                      TM
+
+length : menghitung panjang String
+contoh 1 : "gua adalah".length --> 10  kata
+contoh 2 : var nama = "gua adalah" --> 10  kata

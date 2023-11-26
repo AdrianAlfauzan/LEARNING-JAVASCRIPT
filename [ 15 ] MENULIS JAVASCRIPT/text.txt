@@ -1,0 +1,35 @@
+Menggunakan tag "<script> </script>"
+
+Ada 2 cara menulis javascript :
+1. internal : kita menulis langsung di html kita Menggunakan <script> </script>
+cara ini kita dapat di simpan di dalam tag <head>
+contoh : <head>
+        <script> code...
+        
+        </script>
+        </head>
+
+atau di dalam tag <body>
+contoh : <body>
+        <script> code...
+        
+        </script>
+        </body>
+Tapi, lebih baik menggunakannya di dalam body, agar seluruh elemen html itu d load
+dulu di dalam memori, lalu di jalankan di javascript nya
+
+
+Jika kita ingin javascript menuliskan sesuatu di dalam console, kita
+perlu sebuah fungsi :
+console.log(); --> ini gunanya untuk menuliskan sesuatu ke dalam
+console di browser kita.
+contoh : 
+    <script>
+        var x = 10;
+        console.log("Hello World")
+        console.log("Isi variabel x : ", x)
+    </script>
+
+2. eksternal : kita menulis secara terpisah. dan buat file Javascript.js
+contoh : 
+    <script src="script.js"></script>

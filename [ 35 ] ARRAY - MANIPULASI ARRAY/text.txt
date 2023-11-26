@@ -1,0 +1,20 @@
+Manipulasi Array :
+-   Menambah elemen pada Array
+-   Menghapus elemen pada Array
+-   Menampilkan seluruh isi Array
+
+
+// Method --> harus menggunakan kurung buka!
+contoh : join()
+
+// Method itu adalah function yg ada di dalam sebuah object
+Method pada Array :
+-   length  --> untuk mengetahu berapa jumlah pada Array
+-   join    -->  dia menggabungkan seluruh isi Array dan mengubahnya menjadi
+              sebuah string
+-   push    --> Untuk menambah elemen Array di akhir Array
+-   pop     --> dia menghilangkan elemen terakhir dari Array
+-   unshift --> Menambahkan elemen baru di awal Array
+-   shift   --> dia akan menghapus elemen pertama dari Array
+-   --> ke empat method ini digunakan untuk menambah atau
+    menghapus elemen Array

@@ -1,0 +1,16 @@
+Refactoring --> sebuah proses mengubah kode agar menjadi lebih "BAIK"
+tanpa mengubah fungsionalitasnya.
+
+kenapa harus melakukan Refactoring?
+1. Readability (Kemudahan dlm membaca kode program)
+2. DRY (Don't Repeat Yourself)
+3. Testability (penulisa kode agar mudah saat nantinya dilakukan pengujian)
+4. Performance (bagaimana kita menulis kode, yang dpt meningkatkan Performance
+    dari programnya. contoh pada looping)
+5. Maintainability (bagaimana nanti program kita dpt mudah dikelola atau dikembangkan)
+
+------------Refactoring Sederhana--------------
+function jumlahVolumeDuaKubus(a, b) {
+    return a * a * a + b * b * b;
+}
+console.log(jumlahVolumeDuaKubus(8, 3));

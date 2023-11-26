@@ -1,0 +1,37 @@
+// PENGULANGAN
+
+syntax cara 1 :
+
+var nilaiawal = 1;
+// Sebelum mulai loop, tetukan nilai awalnya 
+
+while(nilaiawal <= 10)
+// lalu,cek kondisi apakah bernilai True atau False
+{
+    console.log("Angkot No.", nilaiawal, "Beroperasi dengan baik.");
+    // Lakukan hal ini jika kondisi bernilai True
+
+    nilaiawal++;
+    lalu, akan di increment(ditambah 1) di akhir tiap pengulangan 
+}
+console.log("Finish")
+// Jika False/sudah melebihi 10, maka akan keluar hal di atas
+
+syntax cara 1 :
+var jumlahangkot = 10;
+var noangkot = 1;
+while(noangkot <= jumlahangkot){
+    console.log("Angkot No.", noangkot, "Beroperasi dengan baik.");
+    noangkot++;
+}
+console.log("Finish")
+
+
+Tabel Penelusuran (Trace Table / dry-run test):
+noangkot     |    noangkot <= jumlahangkot    |      output
+    1                       True                Angkot No. 1 Beroperasi dengan baik.
+    2                       True                Angkot No. 2 Beroperasi dengan baik.
+    3                       True                Angkot No. 3 Beroperasi dengan baik.
+    ...                     ...                         ...
+   10                       True                Angkot No. 10 Beroperasi dengan baik.
+   11                       False                   KELUAR DARI LOOP

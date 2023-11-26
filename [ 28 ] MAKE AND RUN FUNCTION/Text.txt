@@ -1,0 +1,35 @@
+cara kerja function :
+Input --> function --> Output
+
+function yang baik adalah function yang hanya mengerjakan 1 hal saja.
+
+function :
+-   Sebuah blok kode yang dibuat untuk melakukan tugas yg spesifik
+-   dpt dipanggil berulang kali
+-   memudahkan penelusuran
+-   Reusability --> Penggunakan ulang dari kode program kita.
+
+cara buat function :
+function jumlahVolumeDuaKubus (a,b) {
+
+
+    return
+}
+
+-   function --> untuk memberitahu interpreter javascript, bahwa kita akan
+                 mulai menulis sebuah fungsi.
+-   jumlahVolumeDuaKubus --> Menjelaskan apa yang akan dia lakukan
+-   () --> Selalu tuliskan! () untuk menyimpan parameter/argumen/bahan baku
+    untuk nantinya digunakan dalam function.
+-   a,b --> -   parameter/argumen
+            -   Data yang dikirim diluar saat pemanggilan function,
+                untuk digunakan di dalam function
+            -   anggap saja parameter itu variabel khusus untuk function
+            -   parameter boleh kosong atau ada
+            -   jika tidak ada parameter, kurung harus tetap ada
+            -   jika ada,boleh sebanyak mungkin sesuai kebutuhan
+-   Return -->  -   untuk mengembalikan sebuah nilai
+                -   Menggunakan keyword return, lalu di ikuti dgn nilai kembaliannya
+                -   kegunaanya untuk memberitahu interpreter bahwa kita telah selesai mengerjakan
+                    sesuatu dan "INILAH" hasilnya.
+                -   berfungsi untuk berhenti berjalan.

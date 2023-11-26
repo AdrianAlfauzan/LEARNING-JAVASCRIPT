@@ -1,0 +1,7 @@
+PENGELOLAAN ANGKOT
+-   Nama - nama Sopir
+-   Trayek dari angkot yang berjalan
+-   Mengelola uang kas/uang yang disimpan
+-   Penumpang
+    -   Penumpang naik
+    -   Penumpang turun

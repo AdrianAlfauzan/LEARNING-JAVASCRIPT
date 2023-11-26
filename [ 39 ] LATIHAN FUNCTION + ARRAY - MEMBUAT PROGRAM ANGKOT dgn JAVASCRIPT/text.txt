@@ -1,0 +1,52 @@
+ilustasi : 
+var penumpang = [];
+[1].[2],[3] ... [15]
+
+Pengelolaan penumpang
+- Penumpang naik
+  - tambahPenumpang()
+- Penumpang turun
+  - hapusPenumpang()
+
+
+tambahPenumpang()
+- memiliki 2 parameter:
+  - namaPenumpang
+  - array penumpang
+
+- Rules :
+ - jika angkot kosong, penumpang naik dan duduk di kursi pertama
+ - penumpang berikutnya duduk di kursi selanjutnya secara berurutan
+ - jika ada kursi kosong (karena penumpang turun), penumpang yang naik berikutnya
+   duduk di kosong terlebih dahulu
+ - asumsi kursi tidak akan penuh dan akan bertambah terus jika penumpang naik
+ - nama penumpang tidak boleh sama, untuk menghindari kebingungan ketika penumpang turun
+
+[+] tambahPenumpang() --> Test case/kasus 1
+var penumpang = [];
+tambahPenumpang('adrian',penumpang)
+hasil --> ["adrian"] 
+tambahPenumpang('ronaldo',penumpang)
+hasil --> ["adrian","ronaldo"] 
+
+
+[+] tambahPenumpang() --> Test case/kasus 2
+var penumpang = ["adrian", undefined ,"ronaldo"];
+jadi ceritanya undefined ini penumpang sudah turun dari angkot, dan kursinya kosong.
+
+jika saya panggil function
+tambahPenumpang('pessi',penumpang)
+dia harus duduk di kursi yang kosong
+hasil --> ["adrian","pessi","ronaldo"]
+
+ketika ada penumpang lagi yang mau naik,dia akan disimpan di akhir
+tambahPenumpang('neymar',penumpang)
+hasil --> ["adrian","pessi","ronaldo","neymar"]
+
+[+] tambahPenumpang() --> Test case/kasus 3
+jika ada penumpang dgn nama yang sama di dalam angkot
+var penumpang = ["adrian", "pessi" ,"ronaldo"];
+
+misalkan :
+tambahPenumpang('adrian',penumpang)
+kita akan menampilkan notifikasi jika "adrian sudah ada di dalam angkot"

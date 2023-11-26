@@ -1,0 +1,86 @@
+Function --> Kunci utama pada Javascript yang membuat Javascript sangat powerfull
+
+di Javascript untuk melakukan Method,Class,Construktor dan Module.
+semua hal ini dpt dilakukan hanya dgn Function saja.
+
+Function :
+-   Sebuah sub-program / sub-routine yang dpt "dipanggil" di bagian
+    lain pada program.
+-   Merupakan struktur dasar pembentuk dari Javascript
+-   Disebut juga sebagai prosedur (kumpulan statement untuk melakukan tugas
+    atau menghitung sebuah nilai).
+-   Untuk dapat menggunakannya, kita harus "Membuat" terlebih dahulu
+    Function tersebut, lalu "Memanggilnya".
+-   Termasuk ke dalam First-Class Object.
+
+Kenapa harus menggunakan Function?
+-   Reusability (DRY : Do Not Repeat Yourself).
+    jadi, Menulis 1 buah block program (cukup sekali),
+    lalu di panggil berulang-ulang.
+-   Dekomposisi / Abstraksi.
+-   Modularitas --> Membuat program kita menjadi Modul - Modul
+
+Kategori Function ada 2 :
+-   Built-in-Function --> Function yg sudah dibuatkan Javascript
+-   User-Defined-Function --> Function yang kita buat sendiri.
+
+Built-in-Function :
+-   Function yg sudah dibuatkan Javascript
+-   kita tinggal "Memanggilnya saja".
+-   contoh :
+    - alert();
+    - confirm;
+    - prompt;
+    Ini artinya kamu sudah pernah memanggil Function.
+    intinya yang ada di library Javascript.
+-   Masih banyak lagi.
+
+Built-in-Function : String
+-   [+] charAt() --> Diposisi berapa dan Ada character apa di dalam sebuah String.
+    dan posisinya mulai dari 0,1,2,3,5...
+    contoh :
+    var nama = "adrian";
+    console.log(nama.charAt(4));
+
+    [+] slice() 
+    [+] split()
+    [+] toString()
+    [+] toLowerCase()
+    [+] toUpperCase() dll...
+
+User-Defined-Function :
+-   Function yang kita buat sendiri.
+-   Menggunakan keyword Function.
+-   Nama Function (optional).
+-   Parameter / argument / Bahan baku untuk sebuah Function yang bisa
+    digunakan dalam sebuah Function.
+    [+] disimpan di dalam ()
+    [+] boleh ada kurung bukanya atau tidak, jika ada boleh lebih dari satu
+    [+] jika lebih dari satu, pisahkan oleh koma (,)
+-   Function body, "dibungkus" dengan {}
+-   dapat mengembalikan nilai (RETURN VALUE) atau tidak mengembalikan nilai.
+
+Membuat user-Defined Function :
+-   Dengan deklarasi / Function Declaration
+-   Dengan ekspresi / Function expression
+
+[+] Contoh Syntax Function Declaration :
+Function jumlahDuaBilangan (a,b){
+    var total;
+    total = a + b;
+
+    return total;
+}
+
+[+] Contoh Syntax Function expression :
+var jumlahDuaBilangan = Function (a,b){
+    var total;
+    total = a + b;
+
+    return total;
+}
+
+[+] Contoh Memanggil / Menjalankan Function
+alert(jumlahDuaBilangan(1,2));
+alert(jumlahDuaBilangan(25,30));
+alert(jumlahDuaBilangan(1500,17.5));

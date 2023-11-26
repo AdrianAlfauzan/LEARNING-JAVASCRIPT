@@ -1,0 +1,15 @@
+Array method 
+-   length
+-   join --> biasa digunakan untuk menggabungkan array
+-   push,pop,shift,unshift
+-   splice --> kita bisa menyisipkan sebuah elemen di tengah-tengah menggunakan splice
+-   slice --> mengiris Array ketika kita ingin mengambil beberapa bagian pada Array
+        untuk menjadi Array yang baru
+-   foreach --> sama seperti pakai for / looping
+-   map --> Mengembalikan Array, sedangkan foreach tidak!
+-   sort --> Untuk mengurutkan isi Array
+-   filter --> untuk mencari elemen pada Array dan mengembalikkannya dalam bentuk Array
+-   find --> untuk mencari elemen pada Array dan mengembalikkannya dalam bentuk nilai
+perbedaannya : 
+filter --> dpt mengembalikkan banyak nilai
+find --> mengembalikkan 1 nilai (tidak menghasilkan array,tapi menghasilkan 1 nilai)

@@ -1,0 +1,64 @@
+Array --> Tipe data / struktur data
+Array secara umum --> susunan sistematis dari objek" yang serupa.
+Array dlm programming --> tipe data yang digunakan untuk mendeskripsikan
+kumpulan elemen (nilai atau variabel), yang tiap-tiap elemennya memiliki index.
+
+Array menurut saya --> variabel yang lebih SAKTI! karena bisa menampung
+lebih dari satu nilai.
+
+contoh : 
+var hari = ["senin","selasa","rabu"];
+
+kenapa Array?
+-   Untuk mempermudah pengelolaan nilai/value/data
+    - berfungsi dalam hal penelurusan dan pencarian
+-   Manajemen Memori
+
+[+] Karakteristik dari Array 
+definisi Array ;
+-   Array disebut juga variabel jamak, yang mempunyai banyak elemen dan diacu
+    dengan nama yang sama.
+-   kumpulan pasangan key dan nilai/key and value pair
+-   key nya adalah index pada array dengan tipe integer yang dimulai dari 0!
+-   Array pd javascript ini bertipe object
+-   Array pd javascript memiliki fungsi/method length untuk menghitung jumlah elemen
+    didalamnya
+-   Elemen pd array boleh memiliki tipe data berbeda.
+
+--> key and value pair 
+contoh :
+var binatang = ["kucing","panda","kelinci","monyet"];
+// panda indexnya --> 1
+console.log(binatang[2]);
+// ini artinya saya ingin menampilkan isi dari Array binatang yang memiliki index 4
+// maka yang tampil adalah kelinci
+
+--> Array bertipe object
+var binatang = ["kucing","panda","kelinci","monyet"];
+console.log(typeof(binatang));
+// Hasilnya akan object
+// karena tidak ada tipe Array di javascript. yang ada hanya object!
+
+var binatang = ["kucing","panda","kelinci","monyet"];
+console.log(binatang.length);
+// artinya ada berapa elemen di dalam Array binatang ini.
+// Hasilnya 4
+
+--> Elemen pada Array boleh beda tipe
+contoh : 
+var binatang = ["kucing","panda","kelinci","monyet"];
+var hari = ["senin","selasa","rabu","kamis"];
+var angka = [10,232,43535];
+var CampurArray = ["teks",1000,false];
+
+semisal kita bikin function ;
+var myFunc = function(){
+    alert("Hello World);
+}
+var myArr2 = ["teks",2,false,myFunc];
+var myArr3 = ["teks",2,false,myFunc,[1,2,3]]; --> ini namanya Array multi dimensi yg dimana array di dalam array
+
+--> Array di dalam Array - array bersarang / multi dimensi
+var myArr3 = ["teks",2,false,myFunc,[1,2,3]];
+console.log(myArr3[4][1])
+// maka hasilnya 2

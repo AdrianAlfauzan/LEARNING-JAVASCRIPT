@@ -1,0 +1,14 @@
+1. Console :
+dengan cara masuk ke google chrome,lalu inspect,lalu masuk ke Console
+--> alert('Hello World);
+
+2. menuliskan javascript di halaman html atau membuat file terpisah
+1. menggunakan tag script dan simpannya di akhir sebelum tutup body.
+
+contoh 1, dgn tag script :
+    <script>
+        alert('hello world');
+    </script>
+
+contoh 2, dgn file terpisah :
+    <script src="latihan.js"></script>

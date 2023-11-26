@@ -1,0 +1,10 @@
+Array method 
+-   length
+-   join
+-   push,pop,shift,unshift
+-   splice --> kita bisa menyisipkan sebuah elemen di tengah-tengah menggunakan splice
+-   slice --> mengiris Array ketika kita ingin mengambil beberapa bagian pada Array
+        untuk menjadi Array yang baru
+-   foreach --> sama seperti pakai for / looping
+-   map --> Mengembalikan Array, sedangkan foreach tidak!
+-   sort --> Untuk mengurutkan isi Array

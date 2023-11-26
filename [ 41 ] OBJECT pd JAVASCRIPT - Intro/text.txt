@@ -1,0 +1,104 @@
+Perbedaan :
+Array --> Kumpulan nilai, yang memiliki index
+Array adalah sebuah variabel yang lebih sakti.
+
+Object --> Kumpulan nilai,yang memiliki nama
+Object adalah Array, yang lebih sakti.
+
+[+] "JIKA ADA FUNCTION DI DALAM OBJECT, ITU DISEBUT METHOD"
+CONTOH : 
+function Angkot(sopir, trayek, penumpang, kas) {
+  this.sopir = sopir;
+  this.trayek = trayek;
+  this.penumpang = penumpang;
+  this.kas = kas;
+
+  this.penumpangNaik = function()
+}
+
+"DI JAVASCRIPT, OBJECT ADALAH RAJA. JIKA KAMU PAHAM OBJECT, 
+MAKA KAMU AKAN PAHAM JAVASCRIPT"
+
+[+] Object pada bahasa Pemrograman Lain
+-   PHP             --> Associative Array
+-   Python          --> Dictionary
+-   C               --> Hash Tables
+-   Java            --> Hash Maps
+-   Ruby dan Perl   --> Hashes
+
+
+[+] Syntax yang artinya kita Membuat object kosong
+var mhs = {}
+
+Kenapa harus menggunakan Object?
+// SECARA LITERAL / CARA PALING SIMPLE
+
+contoh syntax 1 :
+var mahasiswa = {
+    nama : "adrian",
+    lulus : true,
+    IPSemester : [2.98,2.88,3.28,3.30,3.80,3.78],
+    IPKumulatif : function(){
+        var total = 0;
+        var ips = this.IPSemester;
+        for(var i = 0; i <IPSemester.length; i++){
+            total += IPSemester;
+        }
+        return total/IPSemester.length;
+    }
+}
+// panggil Objectnya dgn notasi titik didalamnya 
+// dan panggil fungsi didalamnya
+mahasiswa.IPKumulatif();
+
+contoh syntax 2 :
+var orang = {
+    // Ini adalah properti di dalam Object
+    nama : "adrian",
+    umur : 20,
+    pekerjaan : "programmer",
+    // Ini adalah properti di dalam Object
+
+    // function di dalam Object Ini disebut "METHOD"
+    sapa : function(){
+        return 'Hi, Nama saya ' + this.nama + ' usia saya ' + this.umur + ' tahun, dan saya adalah seorang ' + this.pekerjaan; 
+    }
+    // function di dalam Object Ini disebut "METHOD"
+
+}
+
+[+] Implementasi 
+
+// Membuat object
+var mhs = {
+  nama: "Adrian",
+  umur: 20,
+  ips: [2.98, 2.88, 3.28, 3.3, 3.8, 3.78],
+
+  // Membuat object di dalam object
+  alamat: {
+    jalan: "Saptamarga",
+    kota: "Bandung",
+    provinsi: "Jawa Barat",
+  },
+  // Membuat object di dalam object
+};
+
+// cara panggilnya di console/F12
+ketik :
+mhs.nama    HASIL   -->  "Adrian"
+mhs.umur    HASIL   -->  20
+mhs["nama"] HASIL   -->  "Adrian"
+
+msh.ips     HASIL   -->  (6) [2.98, 2.88, 3.28, 3.3, 3.8, 3.78]
+mhs.ips[2]  HASIL   -->  3.28
+
+mhs.alamat  HASIL   -->   alamat: {
+    jalan: "Saptamarga",
+    kota: "Bandung",
+    provinsi: "Jawa Barat",
+  },
+
+mhs.alamat.kota             HASIL   -->  "Bandung"
+mhs["alamat"]["jalan"]      HASIL   -->  "Saptamarga"
+mhs["alamat"]["provinsi"]   HASIL   -->  "Jawa Barat"

@@ -1,0 +1,53 @@
+Variabel adalah sebuah "TEMPAT/WADAH" yang memiliki nama, yang 
+digunakan untuk menyimpan NILAI.
+
+Kita harus paham :
+[+] 1. deklarasi :
+    deklarasi adalah sebuah tahap untuk mendaftarkan 
+    Variabel ke dalam lingkup yang sesuai
+    contoh : 
+    var x; artinya kamu mendeklarasikan dan juga menginisialisasi yang namanya x.
+    x = 20; artinya proses assignment. atau kita menugaskan angka 20 untuk
+    disimpan ke Variabel x.
+
+    deklarasi Variabel ada beberapa keyword :
+    1. var 
+    2. let
+    3. const
+untuk membuat variabelnya :
+    var <nama variabel>
+
+RULES! ;
+var <tidak boleh pakai spasi> 
+contoh : var nama saya;
+
+var <tidak boleh pakai angka di depan> 
+contoh : var 12saya;
+
+var <boleh pakai angka tapi di depan>
+contoh ; var saya12;
+
+var <jika ada banyak kata boleh pakai _ dan $>
+contoh : 
+var ini_variabel;
+var ini$variabel;
+
+var <satu kata tapi panjang>
+contoh :
+var iniVariabelPanjang;
+format ini disebut "camel case"
+
+Shorthand untuk variabel :
+contoh : 
+var nama = "adrian",
+    umur = 18,
+    success = True;
+
+[+] 2. inisialisasi :
+    inisialisasi adalah proses untuk penyediaan memori
+    untuk Variabel
+
+[+] 3. assignment :
+    assignment adalah untuk menetapkan nilai yang spesifik 
+    ke dalam Variabel.
+

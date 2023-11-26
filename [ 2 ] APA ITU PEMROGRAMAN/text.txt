@@ -1,0 +1,34 @@
+Apa itu pemrograman?
+
+program adalam kumpulan / serangkaian instruksi.
+atau
+program adalah urutan instruksi terstruktur, yang dirancang agar 
+komputer dapat berprilaku sesuai dengan ketentuan, dengan tujuan untuk 
+menyelesaikan sebuah pekerjaan.
+atau
+Cara kita untuk memberikan instruksi yang simpel dan terstruktur
+pada komputer
+atau instruksi yang kita berikan harus benar dan masuk akal. dan 
+instruksi yang kita berikan harus sesuai dengan aturan pada bahasa
+pemrograman tertentu.
+
+instruksi untuk komputer?
+- Memberi perintah pada komputer
+- melalui bahasa pemrogramannya
+- memecah tugas jadi instruksi sederhana
+
+instruksi sederhana ?
+- Melakukan operasi matematika
+- menampilkan tulisan ke layar
+- Mengubah ukuran posisi,warna dari sebuah pixel
+
+Perilaku Komputer ?
+- komputer tidak begitu pintar,tapi
+- penurut.
+- tidak kenal lelah
+
+statement/perintah untuk komputer dalam bahasa pemrograman :
+- PASCAL --> umur := 30
+- JAVASCRIPT --> var umur  = 30
+- PHP $umur = 30;
+- COBOL --> MOVE 30 TO UMUR 

@@ -1,0 +1,5 @@
+Scope (Lingkup variabel) --> bagaimana sebuah variabel dapat diakses dalam program.
+
+ada 2 jenis Scope :
+1. Block Scope --> Ini biasa digunakan pada pemrograman bahasa c dan java
+2. Function Scope --> Ini biasa digunakan Javascript

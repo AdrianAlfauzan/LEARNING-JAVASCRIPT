@@ -1,0 +1,39 @@
+Tipe data di javascript yaitu angka/number.
+
+Angka adalah numbers in javascript are double-precision FLAOTING POINT
+64-BIT format IEEE 754 values.
+
+jadi,di javascript itu tidak ada INTEGER/BILANGAN BULAT.
+yang ada hanya FLOATING POINT/BILANGAN PECAHAN.
+
+ukuran angka yang dapat di tampung javascript adalah 64 BIT.
+yang artinya kita bisa menyimpan angka sebesar 2 pangkat 64 atau sama dengan
+18 x 10 pangkat 18.
+tapi, TIDAK BISA DI PAKAI SEMUA!
+
+Ada beberapa jenis angka yang dpt kita simpan dengan javascript :
+1. angka tanpa desimal 
+    contoh : 
+    - 10,1500,123456
+
+the question : kan tadi katanya tidak ada integer ya?
+
+jika kita melihat bilangan bulat atau integer pada javascript,
+sebetulnya di belakang layar, yang di proses hanyalah bilangan pecahan.
+    - TAPI, tingkat akurasinya hanya 15 digit.
+
+2. angka dengan desimal 
+    contoh : (wajib bmenggunakan titik)
+    - 3.14, 0.5, 100.00
+
+3. eksponen 
+    contoh :
+    - 123e5 akan menjadi 12300000
+    - 123e-5 akan menjadi 0.00123
+
+4. bilangan negatif
+
+JANGAN PERNAH MENGAWALI ANGKA DENGAN 0 DI JAVASCRIPT
+    contoh :
+    - 022 hasilnya akan menjadi 18
+    dia akan di anggap menjadi bilangan oktal.

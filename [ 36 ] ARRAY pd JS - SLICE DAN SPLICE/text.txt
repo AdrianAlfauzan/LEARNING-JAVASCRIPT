@@ -1,0 +1,32 @@
+Array method 
+-   length
+-   join
+-   push,pop,shift,unshift
+-   splice --> kita bisa menyisipkan sebuah elemen di tengah-tengah menggunakan splice
+-   slice --> mengiris Array ketika kita ingin mengambil beberapa bagian pada Array
+        untuk menjadi Array yang baru
+
+[+] rumus menggunakan splice :
+splice(indexKeberapa, MaudihapusBerapa,MaudiTambahElemenBaru1,elemenbaru2,...)
+
+- Splice
+ cara - 1 --> menambahkan array baru
+ var arr = ["adrian", "musa", "alfauzan"];
+ arr.splice(2, 0, "Ronaldo");
+ console.log(arr.join('-'))
+
+ cara - 2 --> menghapus beberapa array
+ Ini artinya kita menghapus mulai dari index 1 sampai index 2
+ var arr = ["adrian", "musa", "alfauzan"];
+ arr.splice(1, 2);
+ console.log(arr.join("-"));
+
+ cara - 3 --> menghapus beberapa array lalu menambahkan dengan yang baru
+ Ini artinya kita menghapus mulai dari index 1 sampai index 2
+ lalu menambahkan array baru
+var arr = ["adrian", "musa", "alfauzan"];
+arr.splice(1, 2, "Kakang", "Ramos");
+console.log(arr.join("-"));
+
+[+] rumus menggunakan slice :
+slice(IndexAwal,IndexAkhir)

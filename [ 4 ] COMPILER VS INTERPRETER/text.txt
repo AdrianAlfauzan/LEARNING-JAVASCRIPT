@@ -1,0 +1,55 @@
+# COMPILER
+[+] Kelebihan
+- siap untuk dijalankan
+- lebih cepat
+- source code tidak terlihat
+
+[+] Kekurangan
+- tidak lintas platform
+- tidak fleksibel
+- langkah tambahan
+
+
+# INTERPRETER
+[+] Kelebihan
+- lintas platform
+- fleksibel
+- mudah untuk diuji dan mudah untuk di modifikasi
+
+[+] Kekurangan
+- Butuh interpreter
+- lebih lambat
+source code mudah di akses
+
+contoh bahasa :
+COMPILER : C,C++, Objective-C
+INTERPRETER : javascript,PHP 
+hybrid : java,VB.NET,Python
+
+TUJUAN :
+[+] WEB DEVELOPMENT :
+- PHP
+- C 
+- JAVASCRIPT 
+- C++
+- JAVA 
+- PYTHON 
+- RUBY
+
+[+] GAME DEVELOPMENT :
+- C#
+- C 
+- C++ 
+- JAVA 
+- PYTHON 
+- RUBY 
+
+[+] MOBILE APP DEVELOPMENT :
+- R 
+- PYTHON 
+- MATLAB 
+
+[+] EMBEDDED SYSTEM PROGRAMMING :
+- C 
+- C++ 
+- PYTHON

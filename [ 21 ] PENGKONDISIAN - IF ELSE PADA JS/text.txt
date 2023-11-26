@@ -1,0 +1,85 @@
+// PENGKONDISIAN
+
+if : 
+syntax dasar :
+if (kondisi){
+    aksi (lakukan aksi jika kondisi bernilai True)
+}
+... (Keluar dari blok jika kondisi bernilai False)
+
+"===" Operator Identitas :
+contoh 1 <True> :
+var angka = 1;
+if (angka === 1) {
+    alert("Anda memasukkan angka 1");
+}
+bacanya : variabel angka sama dengan 1. 
+lalu jika variabel angka sama dengan 1, 
+maka akan muncul notifikasi/alert, 
+jika salah , maka tidak akan muncul notifikasi/alert (keluar dari bloknya)
+
+contoh 2 <False> :
+var angka = 2;
+if (angka === 1) {
+    alert("Anda memasukkan angka 1");
+}
+bacanya : variabel angka sama dengan 2. 
+lalu jika variabel angka sama dengan 1,
+maka akan muncul notifikasi/alert, 
+jika salah , maka tidak akan muncul notifikasi/alert (keluar dari bloknya)
+
+"<" Operator Lebih kecil dari :
+contoh 1 <True> :
+var angka = 2;
+if (angka < 5) {
+    alert(angka + "lebih kecil dari 5");
+}
+bacanya : variabel angka sama dengan 2,
+jika variabel angka sama dengan 2 kurang dari 5 (True),
+maka alert akan dimunculkan
+
+contoh 2 <False> :
+var angka = 5;
+if (angka < 5) {
+    alert(angka + "lebih kecil dari 5");
+}
+bacanya : variabel angka sama dengan 2,
+jika variabel angka sama dengan 5 kurang dari 5 (False),
+maka alert tidak akan dimunculkan
+
+"==" Operator Sama dengan :
+contoh 1 GENAP:
+var angka = 2;
+if (angka % 2 == 0) {
+    alert(angka + "Adalah bilangan GENAP");
+}
+bacanya : variabel angka sama dengan 2,
+jika variabel angka di modulus 2 sama dengan 0,
+maka hasilnya GENAP.
+
+contoh 2 GANJIL:
+var angka = 2;
+if (angka % 2 == 1) {
+    alert(angka + "Adalah bilangan GANJIL");
+}
+bacanya : variabel angka sama dengan 2,
+jika variabel angka di modulus 2 sama dengan 1,
+maka hasilnya GANJIL.
+
+menggunakan "IF DAN ELSE" :
+contoh 1 :
+var angka = 3;
+if (angka % 2 == 0) {
+    alert(angka + "Adalah bilangan GENAP");
+}else{
+    alert(angka + "Adalah bilangan GANJIL");
+}
+
+"Prompt" :
+var angka = prompt("Masukkan angka");
+if (angka % 2 == 0) {
+    alert(angka + "Adalah bilangan GENAP");
+}else{
+    alert(angka + "Adalah bilangan GANJIL");
+}
+

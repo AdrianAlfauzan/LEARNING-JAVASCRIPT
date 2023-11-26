@@ -1,0 +1,36 @@
+Boolean adalah sebuah tipe data yang digunakan untuk merepresentasikan
+logika True atau False.
+biasanya,Boolean ini digunakan pada statement PENGKONDISIAN, untuk menentukan
+aksi yang berbeda dan mengatur ALUR KENDALO program.
+
+Boolean memiliki 2 nilai :
+True --> ketika kondisinya bernilai benar
+False --> ketika kondisinya bernilai salah
+contoh 1 : 
+var x = 10;
+x < 20
+hasil : True
+
+contoh 2 : 
+"ADRIAN" == "adrian"
+hasil : False
+
+kita dapat menggunakan fungsi dari JS menggunakan boolean.
+contoh : Boolean(nilai)
+Boolean(10 < 20)
+hasil : True
+
+Truthy                                       |       falsy
+True                                                 False
+non-zero number (-1,1,-2,2 dll,kecuali 0)              0
+"string"                                              " "
+object                                              undefined
+arrays                                                 null
+functions                                             NaN
+
+undefined --> sebuah tipe yang dihasilkan ketika kita mendeklarasikan
+sebuah variabel,tapi kita belum mengisikan nilainya.
+contoh : var x = ...(belum diisi)
+
+null --> nilai kosong yang bisa kita berikan pada sebuah variabel
+contoh : var x = null

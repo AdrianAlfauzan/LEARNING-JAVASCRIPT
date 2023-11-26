@@ -1,0 +1,50 @@
+Control Flow / Alur kendali
+
+di dalam pemrograman ada yg namanya Normal Flow / alur normal 
+jadi, apabila program kita memiliki lebih dari satu statement, maka statement
+tersebut akan di eksekusi dari atas ke bawah atau dari kiri ke kanan.
+contoh : 
+alert("Halo");
+alert("Nama");
+alert("Saya");
+alert("Adrian");
+alert("Musa");
+
+contoh lain :
+var angka = prompt("Masukkan angka :" );
+alert("Angka yang anda masukkan adalah : " + angka);
+jika kita punya 2 buah statement seperti ini, maka statement nya akan 
+di eksekusi dari atas ke bawah.
+
+Cara mengatur agar alur programnya tidak di eksekusi dari atas ke bawah :
+[+] 1. pengulangan / loop (iteration) --> ini sebuah konsep untuk mengerjakan
+atau mengeksekusi sebuah statement yang sama lebih dari 1 kali / berulang.
+
+syntax pengulangan pd Javascript :
+1. for
+contoh : 
+alert("Mulai");
+for (var i = 0; i < 5; i++){
+    alert("Hello Wolrd");
+}
+alert("Selesai");
+
+2. while
+3. do while
+
+[+] 2. pengkondisian / percabangan --> ini adalah sebuah keadaan dimana program kita
+bisa memiliki untuk mengeksekusi statement yang berbeda, berdasarkan kondisi yang berbeda.
+
+Beberapa syntax pada pengkondisian :
+1. if
+2. if.. lalu else
+3. if.. else if lalu else
+4. switch
+
+contoh : 
+var angka = prompt("Masukkan angka");
+if (angka % 2 === 0 ){
+    alert(angka + "adalah bilangan GENAP");
+} else{
+    alert(angka + "adalah bilangan GANJIL");
+}

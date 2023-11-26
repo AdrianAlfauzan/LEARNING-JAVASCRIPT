@@ -1,0 +1,54 @@
+[+] Parameter adalah variabel yang ditulis di dalam kurung pada saat function dibuat,
+digunakan untuk menampung nilai yang dikirimkan saat function di panggil.
+
+[+] Argument adalah nilai yang dikirimkan ke Parameter saat fungsi dipanggil.
+
+contoh :
+(a,b) --> Parameter
+
+function tambah (a.b){
+    return a + b;
+}
+(5,10) --> Argument 
+var coba = tambah (5,10);
+
+[+] bagaimana jika parameter dan argumentnya tidak sesuai?
+-   jika parameter LEBIH SEDIKIT DARI Argument,
+-   maka Argument KELEBIHANNYA AKAN DIABAIKAN.
+
+CONTOH : 
+function tambah (a.b){
+    return a + b;
+}
+var coba = tambah (5,10,20);
+//Angka 20 akan diabaikan.
+
+And then ;
+-   jika Parameter LEBIH BANYAK DARI Argument,
+-   maka Parameter KELEBIHANNYA AKAN DIISI DENGAN NILAI undefined.
+
+CONTOH :
+function tambah (a.b,c){
+    return a + b;
+}
+var coba = tambah (5,10);
+//Nilai dari Parameter C adalah undefined.
+
+-------------------------------------------------
+khusus di javascript ada variabel khusus yang namanya "arguments" yang tipenya adalah array.
+arguments --> array yang berisi nilai yang dikirimkan saat fungsi di panggil.
+CONTOH ;
+function tambah (a.b){
+    return a + b;
+}
+var coba = tambah (5,10,20,"hi",false);
+            |
+            |
+arguments = [5,10,20,"hi",false]; --> masing"nya memiliki index.
+
+Jadi jika kita memiliki 
+function tambah(){
+    return arguments;
+}
+var coba = tambah (5,10,20,"hi",false);
+console.log(coba)

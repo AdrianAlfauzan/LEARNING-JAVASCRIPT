@@ -1,0 +1,63 @@
+Pop up box / dialog box adalah sebuah windows kecil pada browser kita, yang dpt kita
+munculkan sebagai alat interaksi, yang digunakan agar user dapat berdialog
+dengan halaman web.
+
+ada 3 buah pop up box yg dpt kita gunakan :
+[+] 1. alert --> memunculkan pesan sederhana 
+contoh : 
+alert("Hello World");
+
+jika kamu menuliskan ini di javascript, maka di browser akan muncul sebuah
+pesan "Hello World"
+
+membuat banyak alert :
+    alert("Hellow World 1");
+    alert("Hellow World 2");
+    alert("Hellow World 3");
+    alert("Hellow Adrian");
+
+[+] 2. prompt --> memunculkan sebuah pesan dengan inputan
+contoh : 
+prompt("Masukkan Nama");
+
+Pop up prompt ini mengembalikan nilai apapun yang kita tulis di inputannya.
+dan bagaimana cara kita akses nilainya? kita simpan prompt ke dalam variabel
+agar, nilai yang di inputkan oleh user,dapat ditampung.
+contoh : 
+var nama = prompt("Masukkan Nama"); --> kita deklarasi dan inisialisasi
+alert(nama); --> kita panggil 
+
+prompt --> tipe datanya string!.
+jadi ketika ingin membuat menjadi integer,perlu memanggil "parseInt"
+contoh : parseInt(prompt("Masukkan Nama"));
+
+
+[+] 3. confirm --> 
+confirm digunakan untuk meminta konfirmasi dari user.
+fungsi confirm ini mengembalikan antara (TRUE ATAU FALSE).
+contoh  : 
+confirm("Kamu yakin");
+
+contoh : 
+var memory = confirm("Kamu yakin?");
+alert(memory) --> hasilnya akan bernilai TRUE ATAU FALSE
+
+contoh dalam pengkondisian atau percabangan :
+var memory = confirm("Kamu yakin?");
+if (memory === true) {
+    alert("User menekan Tombol OK");
+} else {
+    alert("User menekan Tombol Cancel")
+} 
+
+contoh dalam pengulangan :
+alert("Selamat datang");
+var lagi = true;
+
+while (lagi === true) {
+    var nama = prompt("Masukkan Nama");
+    alert("Halo" + nama)
+
+    lagi = confirm("coba lagi ?");
+}
+alert("Thank you!");

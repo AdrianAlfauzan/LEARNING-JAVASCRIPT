@@ -1,0 +1,66 @@
+Function Declaration vs Function Expression
+
+Function Declaration :
+
+Syntax : function identifier (ParameterList) {FunctionBody}
+ParameterList --> opsional --> boleh ada dan boleh tidak
+
+contoh : 
+function tampilpesan(nama){
+    alert('halo' + nama);
+}
+tampilpesan('adrian);
+
+
+Function Declaration :
+
+Syntax : function identifier (ParameterList) {FunctionBody}
+identifier --> opsional --> boleh ada dan boleh tidak
+ParameterList --> opsional --> boleh ada dan boleh tidak
+
+contoh : 
+var tampilpesan  = function (nama){
+                    alert('halo' + nama);
+                    }
+Function Expression biasanya di simpan dalam variabel.
+
+---------------------------PERBEDAANNYA----------------------------------
+Function Declaration :
+-   Lebih Fleksibel (dapat di tulis di manapun),jadi bisa di deklarasikan dulu baru di panggil
+    atau di panggil baru di deklarasikan.
+    contoh Syntax:
+    function tampilpesan(nama){
+    alert('halo' + nama);
+    }
+    tampilpesan('adrian');
+
+    atau 
+    tampilpesan('adrian');
+    function tampilpesan(nama){
+    alert('halo' + nama);
+    }
+    ini semua terjadi karena javascript memiliki konsep "Hoisting".
+
+-   Mudah Di pahami untuk pemula
+
+Function Expression :
+-   Harus didefinisikan terlebih dahulu sebelum di panggil. (WAJIB)
+-   Lebih powerfull :
+    - Sebagai closure
+    - Sebagai argumen untuk function lain
+    - IIFE (Immediately Invoked Function Expression)
+
+    contoh Syntax :
+    "BISA JALAN!"
+    var tampilpesan = function(nama){
+    alert('halo' + nama);
+    }
+    tampilpesan('adrian');
+
+    "TIDAK BISA JALAN"
+    tampilpesan('adrian');
+    var tampilpesan = function(nama){
+    alert('halo' + nama);
+    }
+
+NOTE! "SEMUANYA HARUS PAKAI TANDA "+" TIDAK BOLEH PAKAI "," DALAM MEMANGGIL variabel 

@@ -1,0 +1,62 @@
+Penggunaan while : 
+while (kondisi){
+    Aksi
+}
+
+bacanya : 
+selama (kondisi) bernilai True, maka lakukan Aksi di dalam blok
+selama (kondisi) bernilai False, maka Aksi tidak akan dilakukan
+
+contoh 1 : 
+while (True){
+    console.log("Hello World");
+}
+ini akan membuat infinite loop / looping forever
+jadi looping nya tidak akan pernah berakhir.
+
+contoh 2 : 
+while (False){
+    console.log("Hello World");
+}
+ini akan membuat loop tidak akan berjalan
+
+cara membuat agar looping berhenti ada 2 cara :
+
+1. di hentikan oleh user
+contoh : 
+var ulang = True;
+while (ulang){
+    console.log("Hello World");
+    ulang = confirm("Lagi?");
+}
+bacanya : selama bernilai True,tuliskan "Hello Wolrd"  ke layar
+setelah itu, ulang akan di set lagi nilainya menggunakan sebuah dialog confirm.
+confirm hanya memiliki ok dan cancel yang artinya hanya ada True dan False.
+ketika user menekan Ok, maka nilainya menjadi True dan looping akan berlanjut
+ketika user menekan cancel, maka nilainya menjadi False dan looping akan berhenti
+
+2. dihentikan oleh PROGRAM :
+contoh syntax : 
+nilai awal 
+while (kondisi terminasi){
+    Aksi
+
+    increment / decrement
+}
+
+kondisi terminasi --> kapan loopnya akan berhenti 
+dan juga mengecek keadaan nilai awal.
+
+increment / decrement --> yang menyebabkan loop nya dapat berhenti.
+increment = penambahan dan,
+decrement = pengurangan terhadap nilai awal.
+
+contoh : 
+var nilaiawal = 1;
+while(nilaiawal <= 5){
+    console.log("Hello Wolrd");
+    nilaiawal++; 
+    (ini artinya nilaiawal nya akan di tambah 1)
+    atau memakai
+    nilai awal = nilaiawal + 1;
+}

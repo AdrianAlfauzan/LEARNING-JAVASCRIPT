@@ -1,0 +1,37 @@
+Membuat object pada Javascript,sebelumnya kita memakai 3 cara :
+
+// Membuat object
+
+// cara 1 - Menggunakan Function Declaration
+// function hallo() {
+//   console.log("halo");
+// }
+// hallo();
+
+// cara 2 - Menggunakan Object Literal
+// var obj = {};
+// obj.halo = function () {
+//   console.log("halo");
+// };
+// obj.halo();
+
+// cara 3 - Menggunakan Constructor Function (wajib ada keyword new!)
+// function Hallo() {
+//   console.log("halo");
+// }
+
+// new Hallo();
+
+[+] sekarang kita akan masuk ke "this"
+this adalah sebuah keyword spesial yang secara otomatis didefinisikan setiap function
+
+this dan window itu SAMA!
+
+cara 1 - This Menggunakan Function Declaration
+this nya mengembalikkan object global
+
+cara 2 - This Menggunakan Object Literal
+thisnya akan mengembalikkan objectnya berserta isinya
+
+// cara 3 - Menggunakan Constructor Function (wajib ada keyword new!)
+// this nya mengembalikkan object yang baru dibuat

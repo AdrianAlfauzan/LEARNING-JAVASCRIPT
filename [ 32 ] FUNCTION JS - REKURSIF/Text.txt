@@ -1,0 +1,39 @@
+Rekursif (rekursi / recursior) --> sebuah fungsi yang memanggil dirinya sendiri.
+Menggunakan Rekursif ini, fungsinya HARUS BERAKHIR dan MENGHASILKAN NILAI.
+
+
+cara memberhentikannya dgn BASE CASE ;
+Base Case --> kondisi akhir Rekursif yang menghasilkan nilai.
+
+function cetakAngka(n){
+    if ( n === 0 ){
+        return; 
+        //fungsinya tidak diberi nilai apapun,karena untuk memberhentikannya.
+        // INI ADALAH BASE CASE!
+    }
+
+    console.log(n);
+    cetakAngka(n-1);
+}
+cetakAngka(10);
+
+
+Contoh klasik yang biasa digunakan dlm Rekursif adalah Faktorial!
+Faktorial --> konsep matematik untuk melakukan perkalian.
+Contoh : 5! = 5 x 4 x 3 x 2 x 1
+
+Contoh syntax :
+function faktorial(n){
+    if (n === 0) return 1;
+    return n * faktorial(n-1);
+}
+
+Rekursif --> semua looping bisa dibuat Rekursif, tapi tidak sebaliknya.
+
+Untuk Implementasi Rekursif banyak sekali!
+-   Menggantikan looping
+-   Deret Fibonacci
+-   Pencarian dan penelusuran pada struktur data list dan tree
+-   Bahasa pemrograman yang tidak memiliki pengulangan
+    contohnya : Haskell, Erlang,Prolog dll
+-   dll.

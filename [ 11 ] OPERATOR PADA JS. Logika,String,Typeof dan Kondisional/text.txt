@@ -1,0 +1,122 @@
+4. Logika
+5. String
+6. Kondisional
+7. typeof
+------------------------------------------------------
+1. aritmatika
+2. penugasan
+3. Perbandingan
+4. Logika
+5. String
+Yand di atas adalah Operator Binary
+
+sedangkan,
+6. Kondisional
+Yand di atas adalah Operator Ternary
+
+sedangkan,
+7. typeof
+Yand di atas adalah Operator Unary
+
+Operator Binary adalah sebuah Operator yang membutuhkan 2 operand
+--> "operand1" "Operator" "operand2"
+contoh : 1 + 1 
+
+sedangkan Operator Unary membutuhkan 1 operand 
+--> "Operator" "operand" atau "operand" "Operator"
+
+sedangkan Operator Ternary membutuhkan 3 operand 
+
+####################################################################################
+[+] Operator Logika digunakan untuk menentukan logika dari beberapa ekspresi
+
+symbolnya : 
+Operator logika         |       Keterangan
+    &&                              AND
+    ||                              OR
+    !                               NOT
+
+
+1 ekspresi :
+X = 5
+contoh : (X % 2 == 0)
+         false
+
+2 ekspresi (DAN)
+    contoh 1 : (12 % 2 == 0) && (12 < 10)
+                True            False
+            Hasil : False
+jika menggunakan && (DAN) jika salah satunya FALSE maka dia akan FALSE 
+
+2 ekspresi (OR)
+    contoh 2 : (12 % 2 == 0) || (12 < 10)
+                True            False
+            Hasil : False
+jika menggunakan || (or) jika salah satunya TRUE maka dia akan TRUE 
+
+untuk membalikkan Hasil boolean :
+contoh : x = 10
+            x < 20
+            true
+
+            !(x < 20)
+            false
+
+Operator String --> menggunakan tanda "+"
+di javascript, tanda + memiliki 2 fungsi :
+jika Operandnya adalah angka,maka dia akan menjadi Operator aritmatika,sedangkan
+jika Operandnya adalah String,maka dia akan menjadi Operator penggabung string.
+contoh : 
+a = "apple"
+'apple'
+b = "pen"
+'pen'
+a + b
+'applepen'
+
+jika ingin ada spasi, tambahkan " "
+contoh : 
+a = "apple"
+'apple'
+b = "pen"
+'pen'
+a + " " + b
+'apple pen'
+
+penggabungan string dan angka :
+contoh : 10 + 20 + "10"
+        Hasil : '3010'
+Jika angka dengan angka, maka hasilnya juga angka.
+
+sedangkan
+contoh : "10" + 20 + 10
+        Hasil : '102010'
+Jika salah satunya string, maka tanda (+) Operatornya adalah string.
+
+
+Operator typeof
+Penulisan --> typeof(operand) --> Operator Unary
+contoh :   typeof(10)
+    hasil : 'number'
+
+           typeof("10")
+    hasil : 'string'
+
+           typeof(true)
+    hasil : 'boolean'
+
+Operator Kondisional --> Operator Ternary 
+Berfungsi untuk melakukan pengecekan pada sebuah kondisi, dan menentukan nilai 
+yang di hasilkan ketika nilainya bernilai True atau False
+
+Penulisan : (kondisi) ? benar : salah 
+Pembacaan : jika kondisinya benar,dia akan menjadi True
+            jika kondisinya salah,dia akan menjadi False
+contoh : (x % 2 ==0) ? "genap" : "ganjil"
+         jika kondisinya bernilai True, maka dia akan menghasilkan "genap"
+         jika kondisinya bernilai False, maka dia akan menghasilkan "ganjil"
+        (3 % 2 == 0) ? "genap" : "ganjil"
+        'ganjil'
+
+        (4 % 2 == 0) ? "genap" : "ganjil"
+        'genap'
